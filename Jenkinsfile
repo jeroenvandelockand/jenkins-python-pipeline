@@ -8,8 +8,8 @@ pipeline {
             }
         }
     }
-}
-post {
+
+    post {
 	always {
 		echo 'This will always run'
 	}
@@ -19,4 +19,5 @@ post {
 	failure {
 		echo 'This will run only if failed'
 	}
+    } 
 }
